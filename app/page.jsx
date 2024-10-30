@@ -52,7 +52,7 @@ export default function Page() {
       }
     };
     fetchForecast();
-  }, [weatherData]);
+  }, [weatherData, defaultLocation.lat, defaultLocation.lon]);
   return (
     <div className='md:flex'>
       {!showInput && <ClimaLocal onSearchClick={toggleView} />}
@@ -73,7 +73,7 @@ export default function Page() {
             />
           ))}
         </section>
-        <h3 className='font-bold text-white text-2xl'>Today's Highlights</h3>
+        <h3 className='font-bold text-white text-2xl'>Todays Highlights</h3>
         <Detalles />
       </section>
     </div>
