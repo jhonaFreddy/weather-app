@@ -30,9 +30,9 @@ export default function ClimaLocal({ onSearchClick }) {
           </figure>
         </div>
         {weatherData && (
-          <div className='flex flex-col justify-center items-center gap-12'>
+          <div className='flex flex-col justify-center items-center gap-14'>
             <img src={`weather/${weatherData.weather[0].icon}.png`} alt="" className='w-40' />
-            <div className='text-center text-slate-400 flex flex-col gap-8'>
+            <div className='text-center text-slate-400 flex flex-col gap-9'>
               <div className='flex justify-center items-center'>
                 <h2 className='text-8xl text-gray-50'>{Math.round(weatherData.main.temp - 273.15)}</h2>
                 <h3 className='text-6xl'>°C</h3>
@@ -49,5 +49,4 @@ export default function ClimaLocal({ onSearchClick }) {
       </div>
     </section>
   );
-}
-  
+} 

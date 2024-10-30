@@ -11,8 +11,8 @@ export default function detalles() {
           <h3 className='text-6xl font-semibold'>{weatherData?.wind?.speed || ""}</h3><h4 className='text-4xl font-extralight'>m/s</h4>
         </div>
         <div className='flex gap-3'>
-          <figure className={`bg-slate-600 rounded-full w-8 h-8 flex justify-center`}>
-            <img src="navigation.svg" alt="" className={`w-6`} style={{ transform: `rotate(${weatherData?.wind?.deg || 0}deg)` }} />
+          <figure className={'bg-slate-600 rounded-full w-8 h-8 flex justify-center'}>
+            <img src="navigation.svg" alt="" className={'w-6'} style={{ transform: `rotate(${weatherData?.wind?.deg || 0}deg)` }} />
           </figure>
           <h4 className='text-xl font-thin'>{(() => {
             const deg = weatherData?.wind?.deg || 0;

@@ -19,7 +19,7 @@ export default function Page() {
   useEffect(() => {
     const fetchForecast = async () => {
       try {
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast`, {
+        const response = await axios.get('https://api.openweathermap.org/data/2.5/forecast', {
           params: {
             lat: weatherData?.coord?.lat || defaultLocation.lat,
             lon: weatherData?.coord?.lon || defaultLocation.lon,
