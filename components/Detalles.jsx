@@ -1,7 +1,7 @@
 import React from 'react'
 import { useWeatherContext } from '@/context/WeatherContext';
 
-export default function detalles() {
+export default function Detalles() {
   const { weatherData } = useWeatherContext();
   return (
     <section className='flex gap-5 flex-wrap justify-center'>
